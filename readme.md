@@ -17,6 +17,12 @@ using { cmd } from "@probablyduncan/tslib/cmd";
 using { shuffle, shuffleRef } from "@probablyduncan/tslib/shuffle";
 ```
 
+Publish changes:
+
+```
+> pnpm publish
+```
+
 Run tests:
 
 ```
