@@ -46,8 +46,9 @@
   },
   "scripts": {
     "build": "tsup",
-    "prepublish": "pnpm build && npm version patch && git push",
-    "test": "vitest"
+    "prepublish": "vitest run && tsup && npm version patch && git push",
+    "test": "vitest",
+    "test run": "vitest run"
   },
   "keywords": [
     "typescript",
