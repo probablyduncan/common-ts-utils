@@ -1,6 +1,6 @@
 {
   "name": "@probablyduncan/common-ts",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Common functions and types I use across projects.",
   "repository": {
     "type": "git",
@@ -46,7 +46,6 @@
   },
   "scripts": {
     "build": "tsup",
-    "prepublish": "pnpm build && npm version patch && git push",
     "test": "vitest"
   },
   "keywords": [
