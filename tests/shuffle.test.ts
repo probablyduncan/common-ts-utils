@@ -12,6 +12,8 @@ test("shuffle", () => {
 
         const shuffled = shuffle(arr);
         expect(shuffled).toBeInstanceOf(Array);
+
+        // this might fail once and a while
         expect(shuffled).not.toEqual(arr);
     });
 });
