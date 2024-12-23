@@ -1,0 +1,67 @@
+{
+  "name": "@probablyduncan/common-ts",
+  "version": "1.0.0",
+  "description": "Common functions and types I use across projects.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/probablyduncan/common-ts"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.mjs",
+      "import": "./dist/index.js"
+    },
+    "./cmd": {
+      "types": "./dist/cmd.d.ts",
+      "require": "./dist/cmd.mjs",
+      "import": "./dist/cmd.js"
+    },
+    "./math": {
+      "types": "./dist/math.d.ts",
+      "require": "./dist/math.mjs",
+      "import": "./dist/math.js"
+    },
+    "./shuffle": {
+      "types": "./dist/shuffle.d.ts",
+      "require": "./dist/shuffle.mjs",
+      "import": "./dist/shuffle.js"
+    },
+    "./sos": {
+      "types": "./dist/singleOrSeveral.d.ts",
+      "require": "./dist/singleOrSeveral.mjs",
+      "import": "./dist/singleOrSeveral.js"
+    },
+    "./vec2": {
+      "types": "./dist/vec2.d.ts",
+      "require": "./dist/vec2.mjs",
+      "import": "./dist/vec2.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublish": "pnpm build && npm version patch && git push",
+    "test": "vitest"
+  },
+  "keywords": [
+    "typescript",
+    "utility",
+    "personal"
+  ],
+  "author": "Duncan Petrie",
+  "license": "MIT",
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
