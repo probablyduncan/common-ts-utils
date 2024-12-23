@@ -1,6 +1,6 @@
 {
   "name": "@probablyduncan/common-ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common functions and types I use across projects.",
   "repository": {
     "type": "git",
