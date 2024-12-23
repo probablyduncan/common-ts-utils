@@ -1,5 +1,5 @@
 {
-  "name": "@probablyduncan/common-ts",
+  "name": "@probablyduncan/common",
   "version": "1.0.3",
   "description": "Common functions and types I use across projects.",
   "repository": {
