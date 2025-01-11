@@ -42,6 +42,11 @@
       "types": "./dist/vec2.d.ts",
       "require": "./dist/vec2.mjs",
       "import": "./dist/vec2.js"
+    },
+    "./dateDiff": {
+      "types": "./dist/dateDiff.d.ts",
+      "require": "./dist/dateDiff.mjs",
+      "import": "./dist/dateDiff.js"
     }
   },
   "scripts": {
