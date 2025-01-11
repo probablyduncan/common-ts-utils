@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { DateDiff } from '../src/datediff';
+import DateDiff from '../src/datediff';
 
 test("DateDiff yesterday", () => {
     const now = new Date();

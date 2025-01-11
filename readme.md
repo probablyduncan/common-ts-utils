@@ -2,19 +2,22 @@ These are some common functions and types I use in my projects.
 
 ```
 // math utilities
-using { clamp, unclamp, lerp, unlerp, resolveMinMax } from "@probablyduncan/tslib/math";
+import { clamp, unclamp, lerp, unlerp, resolveMinMax } from "@probablyduncan/common/math";
 
 // vector2 class with basic vector math
-using Vec2 from "@probablyduncan/tslib/vec2";
+import Vec2 from "@probablyduncan/common/vec2";
 
 // ts helper to handle T | T[] types.
-using { toSeveral, type SingleOrSeveral } from "@probablyduncan/tslib/single-or-several";
+import { toSeveral, type SingleOrSeveral } from "@probablyduncan/common/sos";
 
 // node cmd runner utility
-using { cmd } from "@probablyduncan/tslib/cmd";
+import { cmd } from "@probablyduncan/common/cmd";
 
 // functions to shuffle arrays
-using { shuffle, shuffleRef } from "@probablyduncan/tslib/shuffle";
+import { shuffle, shuffleRef } from "@probablyduncan/common/shuffle";
+
+// DateDiff class for parsing time components between dates.
+import DateDiff from "@probablyduncan/common/datediff
 ```
 
 Publish changes:

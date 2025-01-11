@@ -1,7 +1,7 @@
 export const date_parts = ["days", "hours", "minutes", "seconds"] as const;
 export type date_part = typeof date_parts[number];
 
-export class DateDiff {
+export default class DateDiff {
 
     public static ms_second = 1000;
     public static ms_minute = DateDiff.ms_second * 60;
