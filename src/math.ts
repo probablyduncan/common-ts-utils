@@ -36,8 +36,7 @@ export function lerp(v0: number, v1: number, x: number, c: boolean = false): num
         x = clamp(x, 0, 1);
     }
 
-    const { min, max } = resolveMinMax(v0, v1);
-    return (1 - x) * min + x * max;
+    return (1 - x) * v0 + x * v1;
 }
 
 /**
@@ -53,9 +52,7 @@ export function unlerp(v0: number, v1: number, x: number, c: boolean = false): n
         return v1;
     }
 
-    const { min, max } = resolveMinMax(v0, v1);
-
-    const result = (x - min) / (max - min);
+    const result = (x - v0) / (v1 - v0);
     return c ? clamp(result, 0, 1) : result;
 }
 
