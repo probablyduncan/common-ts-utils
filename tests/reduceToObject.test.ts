@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { reduceToObject } from '../src/reduceToObject';
+import { reduceToObject, reduceToArray } from '../src/reduceToObject';
 
 test.for([
     {
@@ -46,4 +46,40 @@ test.for([
     },
 ])("reduceToObject: %o", ({ arr, key, val, result }) => {
     expect(reduceToObject(arr, key, val)).toEqual(result);
+});
+
+
+test.for([
+    {
+        obj: { a: { foo: 1 }, b: { foo: 2 } },
+        keyPropName: undefined,
+        result: [{ foo: 1 }, { foo: 2 }],
+    },
+    {
+        obj: {},
+        keyPropName: undefined,
+        result: [],
+    },
+    {
+        obj: { x: { bar: "baz" } },
+        keyPropName: "id",
+        result: [{ bar: "baz", id: "x" }],
+    },
+    {
+        obj: { a: { val: 1 }, b: { val: 2 } },
+        keyPropName: "key",
+        result: [{ val: 1, key: "a" }, { val: 2, key: "b" }],
+    },
+    {
+        obj: { "1": { foo: null }, "2": { foo: undefined } },
+        keyPropName: "k",
+        result: [{ foo: null, k: "1" }, { foo: undefined, k: "2" }],
+    },
+    {
+        obj: { a: {}, b: {} },
+        keyPropName: "prop",
+        result: [{ prop: "a" }, { prop: "b" }],
+    },
+])("reduceToArray: %o", ({ obj, keyPropName, result }) => {
+    expect(reduceToArray(obj as any, keyPropName)).toEqual(result);
 });

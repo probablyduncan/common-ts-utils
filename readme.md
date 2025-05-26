@@ -18,6 +18,9 @@ import { shuffle, shuffleRef } from "@probablyduncan/common/shuffle";
 
 // DateDiff class for parsing time components between dates.
 import DateDiff from "@probablyduncan/common/datediff
+
+// reduceToObject for converting arrays of object to key/value record, and an object to an array of that object's values
+import { reduceToObject, reduceToArray } from "@probablyduncan/common/reduceToObject
 ```
 
 Publish changes:

@@ -47,6 +47,11 @@
       "types": "./dist/dateDiff.d.ts",
       "require": "./dist/dateDiff.mjs",
       "import": "./dist/dateDiff.js"
+    },
+    "./reduceToObject": {
+      "types": "./dist/reduceToObject.d.ts",
+      "require": "./dist/reduceToObject.mjs",
+      "import": "./dist/reduceToObject.js"
     }
   },
   "scripts": {
