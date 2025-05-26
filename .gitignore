@@ -1,4 +1,3 @@
 /node_modules
-
-# Build files
 /dist
+/.DS_store
