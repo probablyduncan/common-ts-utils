@@ -21,6 +21,9 @@ import DateDiff from "@probablyduncan/common/datediff
 
 // reduceToObject for converting arrays of object to key/value record, and an object to an array of that object's values
 import { reduceToObject, reduceToArray } from "@probablyduncan/common/reduceToObject
+
+// formatQuotes utility for turning straight quotes into directioned curly ones
+import { formatQuotes } from "@probablyduncan/common/quotes
 ```
 
 Publish changes:

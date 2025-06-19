@@ -52,6 +52,11 @@
       "types": "./dist/reduceToObject.d.ts",
       "require": "./dist/reduceToObject.mjs",
       "import": "./dist/reduceToObject.js"
+    },
+    "./quotes": {
+      "types": "./dist/quotes.d.ts",
+      "require": "./dist/quotes.mjs",
+      "import": "./dist/quotes.js"
     }
   },
   "scripts": {
