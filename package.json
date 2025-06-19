@@ -1,6 +1,6 @@
 {
   "name": "@probablyduncan/common",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Common functions and types I use across projects.",
   "repository": {
     "type": "git",
